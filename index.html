@@ -1,130 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Vue JS</title>
+<html lang="ru">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mikhail Bazylevich Junior Manual QA resume</title>
+        <link rel="stylesheet" href="/vue-basic/css/style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <div id="wrapper">
+                <div class="ribbon">
+                    <h1 class="construct">Сайт в разработке</h1>
+                </div>
+            <header>
+                <p class="myName">БАЗЫЛЕВИЧ МИХАИЛ СЕРГЕЕВИЧ</p>
+            </header>
+            <nav>
+                <ul class="top-menu">
+                    <a href="#" class="up_menu" v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button', { active: currentTab === tab }]" v-on:click="currentTab = tab">{{ tab }}</a>
+                </ul>
+            </nav>
+            <div id="heading">
+                <h1>MANUAL JUNIOR QA</h1>
+            </div>
+            <aside>
+                <nav>
+                    <ul class="aside-menu">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="material-icons">account_circle</i>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li>10 июля 1989 г.Ленинград</li>
+                                    {{message}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="material-icons">location_city</i>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <a href="https://yandex.ru/maps/-/CGDcMRI~">Россия г.Санкт-Петербург</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="material-icons">phone</i>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <a href="tel:+79043320230">+79043320230</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="material-icons">email</i>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <a href="mailto:ssbsweet56@gmail.com">ssbsweet56@gmail.com</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="icon-github"></i>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="item last">
+                    <div class="section-headline">НАВЫКИ</div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>АНГЛИЙСКИЙ</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 25%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>SELENIUM</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 63%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>GIT</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 35%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>ATLASSIAN JIRA</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 73%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>SQL</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 29%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>PYTHON</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 41%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>JAVA</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 59%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>JMETER</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 37%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="right">
+                            <span>Linux</span>
+                            <div class="progress">
+                                <div class="determinate" style="width: 37%;">
+                                    <i class="icon-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </aside>
+            <section class="mainContent">
+                <component
+                        v-bind:is="currentTabComponent"
+                        class="tab"
+                ></component>
+            </section>
+        </div>
+    </body>
+</html>
 
-    <style>
-        .circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 1px solid black;
-            display: inline-block;
-            margin: 40px;
-        }
-        .red {background: orangered;}
-        .blue {background: aquamarine;}
-        .green {background: chartreuse;}
-        .textType {width: 200px;}
-    </style>
-
-</head>
-<body>
-
-<div id="app">
-    <h2  v-html="link"></h2>
-    <h2  @mousemove="handleMouseMove">X: {{x}} \ Y: {{y}}
-        <span @mousemove.stop="">Не изменять</span>
-    </h2>
-    <input type="text" @keyup.enter.space="alertValue">
-    <h2>Счетчик = {{counter}}</h2>
-    <button @click="plusCounter">Увеличить</button>
-    <hr>
-    <h2 @mouseover="onHover">{{title}} = {{counter2}}</h2>
-    <button @click="plusCounter2(5, 'изменено на 5', $event)">Увеличить на 5</button>
-    <button @click="plusCounter2(10, 'изменено на 10', $event)">Увеличить на 10</button>
-    <h1>Hello {{name}}</h1>
-    <h1>Sum (10+60): {{10+60}}</h1>
-    <h1>Number: {{number}}</h1>
-    <h1>Method: {{sayHello()}}</h1>
-    <h1>If statement: {{isOk ? 'I am OK' : 'I am not OK!!!'}}</h1>
-    <h1>Reverse: {{name.split('').reverse().join('')}}</h1>
-    <input v-model="name" placeholder="введите несколько строчек"></input>
-    <hr>
-    <input type="text" v-model.lazy="inputValue">
-    <h2>{{inputValue}}</h2>
-    <div class="circle" @click="isActive = !isActive" :class="getCssClasses"></div>
-    <div class="circle" :class="[color, {'red' : isActive}]"></div>
-    <input class="textType" type="text" v-model="color" placeholder="Введите green, blue или red">
-    <h2 v-if="type === 'a'">A</h2>
-    <h2 v-else-if="type === 'b'">B</h2>
-    <h2 v-else-if="type === 'c'">C</h2>
-    <h2 v-else>not match</h2>
-    <hr>
-    <input class="textType" type="text" v-model="type" placeholder="a b или c в малом регистре">
-    <template v-if="isVisible">
-        <h2>I am title</h2>
-        <p>Loren please!</p>
-    </template>
-    <template v-else>
-        <h2 style="color: orangered">I am title</h2>
-        <p style="color: aquamarine">Loren please!</p>
-    </template>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-    new Vue({
-        el: '#app',
+    Vue.component('tab-опыт', {
+        template:
+            '<div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Инженер по тестированию ПО - ООО "Софт-Тест"</h3>\n' +
+                    '<div class="subheadline">Июнь 2019 — по настоящее время</div>\n' +
+                    '<div  class="info">\n' +
+                        '<li>Ручное тестирование</li>\n' +
+                        '<li>Автоматизированное тестирование (Java+TestNG+Selenium)</li>\n' +
+                        '<li>Написание тестовой документации и инструкций</li>\n' +
+                        '<li>Тестирования мобильных приложений</li>\n' +
+                        '<li>Практическое знакомство с SQL</li>\n' +
+                        '<li>Работы с системами баг-трекинга и системами учета дефектов (Jira)</li>\n' +
+                        '<li>Работа с инструментами управления процессом разработки (Git)</li>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Разработчик настольных игр - ООО "Гага-Трейд"</h3>\n' +
+                    '<div class="subheadline">Август 2016 — июнь 2019</div>\n' +
+                    '<div  class="info">\n' +
+                        '<li>Разработка игровых систем</li>\n' +
+                        '<li>Работа с CorelDraw, Photoshop</li>\n' +
+                        '<li>Работа с средой GoogleDocs</li>\n' +
+                        '<li>Курирование игровых проектов</li>\n' +
+                        '<li>Тестирование проектов сторонних разработчиков</li>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Системный администратор (не официально) - ИП Курилов</h3>\n' +
+                    '<div class="subheadline">Декабрь 2010 — июнь 2019</div>\n' +
+                    '<div  class="info">\n' +
+                        '<li>Оптимизация среды 1С</li>\n' +
+                        '<li>Настройка торгового оборудования магазинов и склада</li>\n' +
+                        '<li>Системное администрирование розничной сети</li>\n' +
+                        '<li>Техподдержка по телефону и TeamViewer</li>\n' +
+                        '<li>Составление регламентов по работе с ПО и Аппаратным обеспечением</li>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Менеджер по работе с клиентами - ИП "Курилов А.Г."</h3>\n' +
+                    '<div class="subheadline">Ноябрь 2010 — июнь 2019</div>\n' +
+                    '<div  class="info">\n' +
+                        '<li>Администратрирование команды магазина в розничной сети</li>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Менеджер по работе с клиентами - ООО "Саргона"</h3>\n' +
+                    '<div class="subheadline">Сентябрь 2009 — ноябрь 2010</div>\n' +
+                    '<div  class="info">\n' +
+                        '<li>Системный администор магазина</li>\n' +
+                    '</div>\n' +
+                '</div>' +
+            '</div>',
+    })
+    Vue.component('tab-курсы', {
+        template:
+            '<div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Курсы образовательной платформы Stepik</h3>\n' +
+                    '<div  class="info">\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Aleksey Pogibelev, Юлия Лях</div>\n' +
+                            '<a href="https://stepik.org/cert/207430" target="_blank">Автоматизация тестирования с помощью Selenium и Python</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Александр Мяснов, Иван Савин</div>\n' +
+                            '<a href="https://stepik.org/cert/222733" target="_blank">Введение в базы данных</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Алексей Гуревич, Андрей Пржибельский</div>\n' +
+                            '<a href="https://stepik.org/cert/207450" target="_blank">Введение в Linux</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Тимофей Бондарев, Павел Федотов</div>\n' +
+                            '<a href="https://stepik.org/cert/200680" target="_blank">Программирование на Python</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Артем Глотов</div>\n' +
+                            '<a href="https://stepik.org/cert/195573" target="_blank">JIRA: ведение задач на электронных досках</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-laptop"></i><div class="subheadline">Anton Kholin</div>\n' +
+                            '<a href="https://stepik.org/cert/194996" target="_blank">Тестирование ПО: Базовый уровень</a><br />\n' +
+                        '</div>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Видео-курсы на платформе YouTube</h3>\n' +
+                    '<div  class="info">\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-youtube-play"></i><div class="subheadline">Андрей Сухов</div>\n' +
+                            '<a href="https://www.youtube.com/watch?v=XvQVEVV46p4&list=PL874KddjzYd8d_A1mmUwxZ63MtJaSBXE1" target="_blank">Linux для Начинающих</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-youtube-play"></i><div class="subheadline">Andrey Sozykin</div>\n' +
+                            '<a href="https://www.youtube.com/watch?time_continue=1&v=OLFA0soYGhw" target="_blank">Курс "Компьютерные сети"</a><br />\n' +
+                        '</div>\n' +
+                    '</div>\n' +
+                '</div>' +
+            '</div>',
+    })
+    Vue.component('tab-знания', {
+        template:
+            '<div class="block">\n' +
+                '<div class="block-helper"></div>\n' +
+                '<h3 class="headline">Список литературы</h3>\n' +
+                '<div  class="info">\n' +
+                    '<div class="item"\n>' +
+                        '<i class="icon-book"></i><div class="subheadline">Роман Савин</div>\n' +
+                        '<a href="https://www.ozon.ru/context/detail/id/3128208/" target="_blank">“Тестирование Дот Ком”</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="item"\n>' +
+                        '<i class="icon-book"></i><div class="subheadline">Кори Альтхофф</div>\n' +
+                        '<a href="https://www.labirint.ru/books/638955/" target="_blank">"Сам себе программист"</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="item"\n>' +
+                        '<i class="icon-book"></i><div class="subheadline">Святослав Куликов</div>\n' +
+                        '<a href="https://svyatoslav.biz/software_testing_book/" target="_blank">"Тестирование программного обеспечения. Базовый курс."</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="item"\n>' +
+                        '<i class="icon-book"></i><div class="subheadline">Александр Кенин</div>\n' +
+                        '<a href="https://www.ozon.ru/context/detail/id/4851239/" target="_blank">"Практическое руководство системного администратора"</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="item"\n>' +
+                        '<i class="icon-book"></i><div class="subheadline">Джеймс Уиттакер</div>\n' +
+                        '<a href="https://www.labirint.ru/books/421532/" target="_blank">"Как тестируют в Google"</a><br />\n' +
+                    '</div>\n' +
+                '</div>\n' +
+            '</div>',
+    })
+    Vue.component('tab-github', {
+        template:
+            '<div class="block">' +
+                '<div class="block-helper"></div>\n' +
+                '<h3 class="headline" class="icon-github">   GitHub ссылки</h3>\n' +
+                '<div  class="info">\n' +
+                    '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                '</div>\n' +
+            '</div>',
+    })
+
+    var wrapper = new Vue({
+        el: '#wrapper',
         data: {
-            link: '<a href="http://google.com" target="_blank">Google</a>',
-            name: 'Vue!',
-            number: 100,
-            isOk: true,
-            counter: 0,
-            counter2: 0,
-            title: 'Счетчик',
-            x: 0,
-            y: 0,
-            inputValue: 'init',
-            isActive: false,
-            color: 'blue',
-            type: 'a',
-            isVisible: false
+            currentTab: 'ОПЫТ',
+            tabs: ['ОПЫТ', 'КУРСЫ', 'ЗНАНИЯ', 'GITHUB']
         },
         computed: {
-            getCssClasses: function () {
-                return {
-                    'red': this.isActive,
-                    'green': !this.isActive
-                }
+            currentTabComponent: function () {
+                return 'tab-' + this.currentTab.toLowerCase()
             }
-        },
-        methods: {
-            sayHello: function() {
-                return 'I am function!'
-            },
-            plusCounter: function () {
-                this.counter++
-            },
-            plusCounter2: function (num, str, event) {
-                this.counter2 += num
-                this.title = str
-                if (num==5) {
-                    event.target.style.color = 'blue'
-                }
-                else if (num==10) {
-                    event.target.style.color = 'green'
-                }
-            },
-            onHover: function (event) {
-                event.target.style.color = 'red'
-            },
-            clickOnGoogle: function (event) {
-                event.preventDefault()
-
-            },
-            handleMouseMove: function (event) {
-                this.x = event.clientX
-                this.y = event.clientY
-            },
-            alertValue: function (event) {
-                    alert(event.target.value)
-            }
-
         }
     })
 </script>
-</body>
-</html>
