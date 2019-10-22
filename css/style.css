@@ -43,10 +43,7 @@
 }
 
 body {
-/*     color: #8f8f8f; */
-/*     font: 12px Tahoma, sans-serif; */
     background-color: #f8f8f8;
-/*     margin: 0; */
 }
 
 header {
@@ -92,10 +89,10 @@ nav li {
     color: #b2b2b2;
 }
 
-#heading h1{
+#heading h1 {
     display: inline-block;
     color: #7e7e7e;
-    font: 30px 'Oswald', sans-serif;
+    font: 30px 'Oswald';
     margin: 30px 0;
     padding-left: 10px;
 }
