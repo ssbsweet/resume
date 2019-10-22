@@ -1,5 +1,5 @@
 .ribbon {
-    width: 400px;
+    width: 300px;
     margin-top: 20px;
     float: right;
     position:relative;
@@ -219,6 +219,7 @@ span {
 }
 
 .section-headline {
+    padding: 4px 5px 3px 15ps;
     border-radius: 5px 0 0 5px;
     background: #bfbfbf;
     color: #fff;
