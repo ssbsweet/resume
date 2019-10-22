@@ -219,7 +219,7 @@ span {
 }
 
 .section-headline {
-    padding-top: 4px 5px 3px 15px;
+    padding: 4px 5px 3px 15px;
     border-radius: 5px 0 0 5px;
     background: #7e7e7e;
     color: #fff;
