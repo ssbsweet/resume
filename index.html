@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue JS</title>
+
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px;
+        }
+        .red {background: orangered;}
+        .blue {background: aquamarine;}
+        .green {background: chartreuse;}
+        .textType {width: 200px;}
+    </style>
+
+</head>
+<body>
+
+<div id="app">
+    <h2  v-html="link"></h2>
+    <h2  @mousemove="handleMouseMove">X: {{x}} \ Y: {{y}}
+        <span @mousemove.stop="">Не изменять</span>
+    </h2>
+    <input type="text" @keyup.enter.space="alertValue">
+    <h2>Счетчик = {{counter}}</h2>
+    <button @click="plusCounter">Увеличить</button>
+    <hr>
+    <h2 @mouseover="onHover">{{title}} = {{counter2}}</h2>
+    <button @click="plusCounter2(5, 'изменено на 5', $event)">Увеличить на 5</button>
+    <button @click="plusCounter2(10, 'изменено на 10', $event)">Увеличить на 10</button>
+    <h1>Hello {{name}}</h1>
+    <h1>Sum (10+60): {{10+60}}</h1>
+    <h1>Number: {{number}}</h1>
+    <h1>Method: {{sayHello()}}</h1>
+    <h1>If statement: {{isOk ? 'I am OK' : 'I am not OK!!!'}}</h1>
+    <h1>Reverse: {{name.split('').reverse().join('')}}</h1>
+    <input v-model="name" placeholder="введите несколько строчек"></input>
+    <hr>
+    <input type="text" v-model.lazy="inputValue">
+    <h2>{{inputValue}}</h2>
+    <div class="circle" @click="isActive = !isActive" :class="getCssClasses"></div>
+    <div class="circle" :class="[color, {'red' : isActive}]"></div>
+    <input class="textType" type="text" v-model="color" placeholder="Введите green, blue или red">
+    <h2 v-if="type === 'a'">A</h2>
+    <h2 v-else-if="type === 'b'">B</h2>
+    <h2 v-else-if="type === 'c'">C</h2>
+    <h2 v-else>not match</h2>
+    <hr>
+    <input class="textType" type="text" v-model="type" placeholder="a b или c в малом регистре">
+    <template v-if="isVisible">
+        <h2>I am title</h2>
+        <p>Loren please!</p>
+    </template>
+    <template v-else>
+        <h2 style="color: orangered">I am title</h2>
+        <p style="color: aquamarine">Loren please!</p>
+    </template>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            link: '<a href="http://google.com" target="_blank">Google</a>',
+            name: 'Vue!',
+            number: 100,
+            isOk: true,
+            counter: 0,
+            counter2: 0,
+            title: 'Счетчик',
+            x: 0,
+            y: 0,
+            inputValue: 'init',
+            isActive: false,
+            color: 'blue',
+            type: 'a',
+            isVisible: false
+        },
+        computed: {
+            getCssClasses: function () {
+                return {
+                    'red': this.isActive,
+                    'green': !this.isActive
+                }
+            }
+        },
+        methods: {
+            sayHello: function() {
+                return 'I am function!'
+            },
+            plusCounter: function () {
+                this.counter++
+            },
+            plusCounter2: function (num, str, event) {
+                this.counter2 += num
+                this.title = str
+                if (num==5) {
+                    event.target.style.color = 'blue'
+                }
+                else if (num==10) {
+                    event.target.style.color = 'green'
+                }
+            },
+            onHover: function (event) {
+                event.target.style.color = 'red'
+            },
+            clickOnGoogle: function (event) {
+                event.preventDefault()
+
+            },
+            handleMouseMove: function (event) {
+                this.x = event.clientX
+                this.y = event.clientY
+            },
+            alertValue: function (event) {
+                    alert(event.target.value)
+            }
+
+        }
+    })
+</script>
+</body>
+</html>

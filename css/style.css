@@ -1,0 +1,277 @@
+.ribbon {
+    width: 400px;
+    margin-top: 20px;
+    float: right;
+    position:relative;
+    color: rgba(92, 92, 92, 0.85);
+    border-radius: 7px 0 0 7px;
+    background: rgb(246, 232, 0);
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.5);
+}
+
+.ribbon:before, .ribbon:after {
+    position:absolute;
+    content: '';
+    display: block;
+}
+
+.ribbon:before {
+    width: 10px;
+    height: 100%;
+    padding: 0 0 10px;
+    top: 0px;
+    right: -5px;
+    background:inherit;
+    border-radius: 0 7px 7px 0;
+}
+
+.ribbon:after {
+    width: 7px;
+    height: 7px;
+    background: rgba(0,0,0,0.35);
+    bottom: -7px;
+    right: -2px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+}
+
+.construct {
+
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+body {
+    color: #8f8f8f;
+    font: 12px Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+header {
+    padding: 20px 0;
+}
+
+#wrapper {
+    margin-left: 50px;
+    width: 940px;
+}
+
+.myName {
+    display: inline-block;
+    color: #7e7e7e;
+    font: 40px/40px 'Oswald', sans-serif;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-position: inside;
+    font: 14px 'Oswald', sans-serif;
+    padding: 10px;
+}
+
+#wrapper > nav > ul > a.up_menu.tab-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-left: 20px;
+}
+
+#wrapper > nav > ul > a.up_menu.tab-button.active {
+    border-radius: 5px;
+    background: #29c5e6;
+    color: #fff;
+}
+
+.top-menu  {
+    color: #b2b2b2;
+}
+
+#heading {
+    margin: 30px 0;
+    padding-left: 10px;
+    color: #7e7e7e;
+}
+
+h1 {
+    display: inline-block;
+    color: #7e7e7e;
+    font: 40px/40px 'Oswald', sans-serif;
+    margin: 0;
+}
+
+aside {
+    float: left;
+    width: 250px;
+}
+
+.aside-menu li:first-child {
+    border: none;
+}
+
+.item {
+    width: 100%;
+    float: left;
+}
+
+.icon {
+    width: 20%;
+    float: left;
+}
+
+.material-icons {
+    display: inherit;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.icon-github:before {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.item .text li, .item .text a {
+    padding-top: 5px;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    list-style-type: square;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 10px;
+}
+
+.info .item:first-child {
+    border: none;
+}
+
+.info .item {
+    padding-top: 5px;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    list-style-type: square;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 10px;
+}
+
+.left_menu.active {
+    color: #29c5e6;
+}
+
+.left_menu a {
+    color: #8f8f8f;
+}
+
+.progress {
+    float: left;
+    position: relative;
+    height: 2px;
+    display: block;
+    width: 95%;
+    background-color: hsla(0,0%,100%,.19);
+    border-radius: 2px;
+    margin: .5rem 0 1rem;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+.determinate {
+    background-color: #29c5e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.skill .icon-lightbulb {
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+    top: 1px;
+    right: 1px;
+    margin-left: 50%;
+}
+
+.block.tab .info .item .icon-book {
+    float: left;
+    font-size: 35px;
+    margin-right: 20px;
+    color: darkslategray;
+}
+
+.icon-laptop {
+    float: left;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.icon-youtube-play {
+    float: left;
+    font-size: 35px;
+    margin-right: 20px;
+    color: firebrick;
+}
+
+span {
+    font-weight: 200;
+}
+
+.item.last {
+    margin-top: 20px;
+}
+
+.section-headline {
+    font-size: 17px;
+    float: right;
+}
+
+.skill {
+    margin-top: 20px;
+}
+
+section {
+    width: 50%;
+    margin-left: 280px;
+    padding-bottom: 50px;
+}
+
+.block {
+    width: 600px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    display: inline-block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.headline {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 30px;
+    font-weight: 300;
+    display: block;
+    font-size: 20px;
+    color: #7e7e7e;
+}
+
+.subheadline {
+    color: #7e7e7e;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.info {
+    font-size: 14px;
+    color: rgba(0,0,0,.870588);
+    margin-bottom: 0;
+    padding-top: 20px;
+}
