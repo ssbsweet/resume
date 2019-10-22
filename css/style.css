@@ -58,7 +58,7 @@ header {
 .myName {
     display: inline-block;
     color: #7e7e7e;
-    font: 30px 'Oswald', sans-serif;
+    font-size: 30px;
     margin: 10px 0;
     padding: 0 10px;
 }
@@ -92,8 +92,7 @@ nav li {
 #heading h1 {
     display: inline-block;
     color: #7e7e7e;
-    font-family: 'Oswald';
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     font-style: normal;
     margin: 30px 0;
