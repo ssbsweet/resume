@@ -86,7 +86,7 @@
                     </ul>
                 </nav>
                 <div class="item last">
-                    <div class="section-headline">НАВЫКИ</div>
+                    <div class="section-headline">ЗНАНИЯ</div>
                     <div class="skill">
                         <div class="right">
                             <span>АНГЛИЙСКИЙ</span>
@@ -249,7 +249,7 @@
                 '</div>' +
             '</div>',
     })
-    Vue.component('tab-курсы', {
+    Vue.component('tab-образование', {
         template:
             '<div>' +
                 '<div class="block">\n' +
@@ -296,33 +296,30 @@
                         '</div>\n' +
                     '</div>\n' +
                 '</div>' +
-            '</div>',
-    })
-    Vue.component('tab-знания', {
-        template:
-            '<div class="block">\n' +
-                '<div class="block-helper"></div>\n' +
-                '<h3 class="headline">Список литературы</h3>\n' +
-                '<div  class="info">\n' +
-                    '<div class="item"\n>' +
-                        '<i class="icon-book"></i><div class="subheadline">Роман Савин</div>\n' +
-                        '<a href="https://www.ozon.ru/context/detail/id/3128208/" target="_blank">“Тестирование Дот Ком”</a><br />\n' +
-                    '</div>\n' +
-                    '<div class="item"\n>' +
-                        '<i class="icon-book"></i><div class="subheadline">Кори Альтхофф</div>\n' +
-                        '<a href="https://www.labirint.ru/books/638955/" target="_blank">"Сам себе программист"</a><br />\n' +
-                    '</div>\n' +
-                    '<div class="item"\n>' +
-                        '<i class="icon-book"></i><div class="subheadline">Святослав Куликов</div>\n' +
-                        '<a href="https://svyatoslav.biz/software_testing_book/" target="_blank">"Тестирование программного обеспечения. Базовый курс."</a><br />\n' +
-                    '</div>\n' +
-                    '<div class="item"\n>' +
-                        '<i class="icon-book"></i><div class="subheadline">Александр Кенин</div>\n' +
-                        '<a href="https://www.ozon.ru/context/detail/id/4851239/" target="_blank">"Практическое руководство системного администратора"</a><br />\n' +
-                    '</div>\n' +
-                    '<div class="item"\n>' +
-                        '<i class="icon-book"></i><div class="subheadline">Джеймс Уиттакер</div>\n' +
-                        '<a href="https://www.labirint.ru/books/421532/" target="_blank">"Как тестируют в Google"</a><br />\n' +
+                '<div class="block">\n' +
+                    '<div class="block-helper"></div>\n' +
+                    '<h3 class="headline">Список литературы</h3>\n' +
+                    '<div  class="info">\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-book"></i><div class="subheadline">Роман Савин</div>\n' +
+                            '<a href="https://www.ozon.ru/context/detail/id/3128208/" target="_blank">“Тестирование Дот Ком”</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-book"></i><div class="subheadline">Кори Альтхофф</div>\n' +
+                            '<a href="https://www.labirint.ru/books/638955/" target="_blank">"Сам себе программист"</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-book"></i><div class="subheadline">Святослав Куликов</div>\n' +
+                            '<a href="https://svyatoslav.biz/software_testing_book/" target="_blank">"Тестирование программного обеспечения. Базовый курс."</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-book"></i><div class="subheadline">Александр Кенин</div>\n' +
+                            '<a href="https://www.ozon.ru/context/detail/id/4851239/" target="_blank">"Практическое руководство системного администратора"</a><br />\n' +
+                        '</div>\n' +
+                        '<div class="item"\n>' +
+                            '<i class="icon-book"></i><div class="subheadline">Джеймс Уиттакер</div>\n' +
+                            '<a href="https://www.labirint.ru/books/421532/" target="_blank">"Как тестируют в Google"</a><br />\n' +
+                        '</div>\n' +
                     '</div>\n' +
                 '</div>\n' +
             '</div>',
@@ -342,7 +339,7 @@
         el: '#wrapper',
         data: {
             currentTab: 'ОПЫТ',
-            tabs: ['ОПЫТ', 'КУРСЫ', 'ЗНАНИЯ', 'GITHUB']
+            tabs: ['ОПЫТ', 'ОБРАЗОВАНИЕ', 'GITHUB']
         },
         computed: {
             currentTabComponent: function () {
