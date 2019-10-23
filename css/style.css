@@ -125,12 +125,11 @@ aside {
 
 .icon-github:before {
     font-size: 25px;
-    margin-left: 15px;
     margin-top: 15px;
 }
 
 .item .text li, .item .text a {
-    padding-top: 5px;
+    padding-top: 10px;
     display: block;
     font-size: 15px;
     font-weight: 300;
@@ -185,9 +184,8 @@ aside {
     font-size: 18px;
     position: absolute;
     color: #fff;
-    top: 1px;
-    right: 1px;
-    margin-left: 50%;
+    top: 2px;
+    right: 2px;
 }
 
 .info .item .icon-book {
@@ -257,6 +255,12 @@ section {
     display: block;
     font-size: 20px;
     color: #7e7e7e;
+}
+
+.block .icon-github:before {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #333333;
 }
 
 .subheadline {
