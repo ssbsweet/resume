@@ -290,6 +290,14 @@ section {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
+.block-image a img {
+    border-radius: 7px;
+}
+
+.block-image img:hover {
+    opacity: 0.6;
+}
+
 .headline {
     margin-top: 0px;
     margin-bottom: 0px;
