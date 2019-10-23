@@ -322,6 +322,31 @@
                 '</div>\n' +
             '</div>',
     })
+    Vue.component('tab-портфолио', {
+        template:
+            '<div>' +
+                '<div class="block-square">' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                    '<div class="block-image">\n' +
+                        '<a href="https://github.com/ssbsweet?tab=repositories" target="_blank">   Репозиторий на GitHub</a><br />\n' +
+                    '</div>\n' +
+                '</div>\n' +
+            '</div>',
+    })
     Vue.component('tab-github', {
         template:
             '<div class="block">' +
@@ -332,12 +357,12 @@
                 '</div>\n' +
             '</div>',
     })
-
+    // ----------------------------------------------------------------------------------------------
     var wrapper = new Vue({
         el: '#wrapper',
         data: {
             currentTab: 'ОПЫТ',
-            tabs: ['ОПЫТ', 'ОБРАЗОВАНИЕ', 'GITHUB']
+            tabs: ['ОПЫТ', 'ОБРАЗОВАНИЕ', 'ПОРТФОЛИО','GITHUB']
         },
         computed: {
             currentTabComponent: function () {
