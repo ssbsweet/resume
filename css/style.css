@@ -350,12 +350,12 @@ section {
 
     .myName {
         color: #7e7e7e;
-        font-size: 20px;
+        font-size: 120%;
     }
 
     #wrapper > nav > ul > a.up_menu.tab-button {
-        padding: 10px 5px;
-        margin-left: 10px;
+        padding: 2% 1%;
+        margin-left: 1%;
     }
 
     #wrapper > nav > ul > a.up_menu.tab-button.active {
@@ -373,6 +373,7 @@ section {
     }
 
     aside {
+        width: 100%;
         order: 2;
         padding-bottom: 150px;
     }
@@ -427,7 +428,7 @@ section {
     }
 
     .item.last {
-        width: 350px;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -455,7 +456,7 @@ section {
     .ribbon {
         width: 300px;
         margin-top: 20px;
-        margin-left: 80px;
+        margin-left: 20%;
         position:relative;
         color: rgba(92, 92, 92, 0.85);
         border-radius: 7px 0 0 7px;
