@@ -456,7 +456,7 @@ section {
     .ribbon {
         width: 300px;
         margin-top: 20px;
-        margin-left: 20%;
+        margin-left: 10%;
         position:relative;
         color: rgba(92, 92, 92, 0.85);
         border-radius: 7px 0 0 7px;
